@@ -1,0 +1,16 @@
+
+* {
+  min-height: 0;
+  min-width: 0;
+  font-family: "JetBrainsMono Nerd Font", monospace;
+  font-size: 16px;
+  font-weight: 800;
+	background:transparent;
+	color: white
+
+}
+
+label.module {
+    padding: 0 10px;
+		border-radius: 10px;
+}

@@ -1,0 +1,68 @@
+{
+  "position": "top",
+	"height": 30,
+  "modules-left": ["hyprland/workspaces"],
+  "modules-center": ["clock"],
+  "modules-right": ["hyprland/language","network", "pulseaudio", "battery", "tray"],
+  "network": {
+    "format-wifi": "<span size='13000' foreground='#f5e0dc'>  </span>{essid}",
+    "format-ethernet": "<span size='13000' foreground='#f5e0dc'>󰤭  </span> Disconnected",
+    "format-linked": "{ifname} (No IP) ",
+    "format-disconnected": "<span size='13000' foreground='#f5e0dc'>  </span>Disconnected",
+    "tooltip-format-wifi": "Signal Strenght: {signalStrength}%"
+  },
+	    "clock": {
+    "format": "{:%H:%M:%S}",
+				"tooltip-format": "",
+				"interval": 1
+    },
+"hyprland/workspaces": {
+  "format": "{icon}",
+  "on-click": "activate",
+  "format-icons": {
+    "1": "",   // graduation cap icon (Nerd Font)
+    "2": "",   // Chrome browser icon
+    "3": "",   // terminal / code icon
+    "4": "",   // gear (settings)
+    "5": "",   // gear (settings)
+		"9": "󰙯",   // Discord icon (alternative: )
+    "10": "󰚩",
+    "default": ""
+  }
+},
+"battery": {
+    "format": "{icon} {capacity}%",
+    "format-charging": "⚡ {capacity}%",
+    "format-plugged": "🔌 {capacity}%",
+    "format-icons": [ "", "", "", "", "" ],
+    "bat": "BAT0",
+    "interval": 30
+},
+"network": {
+    "interface": "wlp4s0", 
+		"format-wifi": " {essid}",
+"format-ethernet": " ETH",
+"format-disconnected": " No Net",
+  "on-click": "~/.config/waybar/scripts/rofi-wifi.sh",
+    "interval": 10
+
+},
+"pulseaudio": {
+  "format": "{icon} {volume}%",
+  "format-muted": " Muted",
+  "format-icons": {
+    "default": ["", "", ""]
+  },
+  "scroll-step": 5,
+  "on-click": "pavucontrol",
+  "on-click-right": "pamixer -t",
+  "on-scroll-up": "pamixer -i 5",
+  "on-scroll-down": "pamixer -d 5"
+},
+"hyprland/language": {
+    "format": "{}",
+    "format-en": "EN",
+    "format-cs": "CZ"
+}
+
+}
