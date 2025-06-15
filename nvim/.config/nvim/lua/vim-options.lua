@@ -30,6 +30,19 @@ vim.api.nvim_set_keymap("n", "<leader>vs", ":vsplit<CR>", { noremap = true, sile
 
 vim.keymap.set("n", "<leader>q", "<CMD>bdelete<CR>", { noremap = true, silent = true })
 
+-- vim.keymap.set("n", "<F13>", ":echo 'Custom CTRL1'<CR>", { noremap = true, silent = true })
+-- vim.keymap.set("n", "<F14>", ":echo 'Custom CTRL2'<CR>", { noremap = true, silent = true })
+-- vim.keymap.set("n", "<F15>", ":echo 'Custom CTRL3'<CR>", { noremap = true, silent = true })
+-- vim.keymap.set("n", "<F16>", ":echo 'Custom CTRL4'<CR>", { noremap = true, silent = true })
+-- vim.keymap.set("n", "<F17>", ":echo 'Custom CTRL5'<CR>", { noremap = true, silent = true })
+-- vim.keymap.set("n", "<F18>", ":echo 'Custom CTRL6'<CR>", { noremap = true, silent = true })
+-- vim.keymap.set("n", "<F19>", ":echo 'Custom CTRL7'<CR>", { noremap = true, silent = true })
+-- vim.keymap.set("n", "<F20>", ":echo 'Custom CTRL8'<CR>", { noremap = true, silent = true })
+-- vim.keymap.set("n", "<F21>", ":echo 'Custom CTRL9'<CR>", { noremap = true, silent = true })
+-- vim.keymap.set("n", "<F22>", ":echo 'Custom CTRL0'<CR>", { noremap = true, silent = true })
+-- vim.keymap.set("n", "<F23>", ":echo 'Custom CTRL TAB'<CR>", { noremap = true, silent = true })
+
+
 vim.cmd([[
   command! Wa wa
   command! Qa qa

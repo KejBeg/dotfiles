@@ -9,8 +9,25 @@
 
 keymap = [
 
-{ on = "t", run = 'shell "kitty -e nvim %s"', desc = "Open in Neovim via Kitty" },
+# Tabs
+	{ on = "<C-t>", run = "tab_create --current", desc = "Create a new tab with CWD" },
+	{ on = "<C-w>", run = "tab_close --current", desc = "Create a new tab with CWD" },
 
+	{ on = "<F13>", run = "tab_switch 0", desc = "Switch to tab" },
+	{ on = "<F14>", run = "tab_switch 1", desc = "Switch to tab" },
+	{ on = "<F15>", run = "tab_switch 2", desc = "Switch to tab" },
+	{ on = "<F16>", run = "tab_switch 3", desc = "Switch to tab" },
+	{ on = "<F17>", run = "tab_switch 4", desc = "Switch to tab" },
+	{ on = "<F18>", run = "tab_switch 5", desc = "Switch to tab" },
+	{ on = "<F19>", run = "tab_switch 6", desc = "Switch to tab" },
+	{ on = "<F20>", run = "tab_switch 7", desc = "Switch to tab" },
+	{ on = "<F21>", run = "tab_switch 8", desc = "Switch to tab" },
+	{ on = "<F22>", run = "tab_switch 9", desc = "Switch to tab" },
+
+{ on = "<F23>", run = "tab_switch +1 --relative", desc = "Switch to previous tab" },
+{ on = "<C-h>", run = "tab_switch -1 --relative", desc = "Switch to previous tab" },
+
+{ on = "<C-l>", run = "tab_switch +1 --relative", desc = "Switch to previous tab" },
 
 { on = "<Esc>", run = "escape",             desc = "Exit visual mode, clear selection, or cancel search" },
 { on = "q",     run = "quit",               desc = "Quit the process" },
@@ -334,5 +351,6 @@ keymap = [
 
 				# Filtering
 { on = "f", run = "filter", desc = "Filter help items" },
+
 ]
 

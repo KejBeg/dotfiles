@@ -4,13 +4,7 @@
   "modules-left": ["hyprland/workspaces"],
   "modules-center": ["clock"],
   "modules-right": ["hyprland/language","network", "pulseaudio", "battery", "tray"],
-  "network": {
-    "format-wifi": "<span size='13000' foreground='#f5e0dc'>  </span>{essid}",
-    "format-ethernet": "<span size='13000' foreground='#f5e0dc'>󰤭  </span> Disconnected",
-    "format-linked": "{ifname} (No IP) ",
-    "format-disconnected": "<span size='13000' foreground='#f5e0dc'>  </span>Disconnected",
-    "tooltip-format-wifi": "Signal Strenght: {signalStrength}%"
-  },
+ 
 	    "clock": {
     "format": "{:%H:%M:%S}",
 				"tooltip-format": "",
@@ -39,11 +33,11 @@
     "interval": 30
 },
 "network": {
+		"on-click": "networkmanager_dmenu",
     "interface": "wlp4s0", 
 		"format-wifi": " {essid}",
 "format-ethernet": " ETH",
 "format-disconnected": " No Net",
-  "on-click": "~/.config/waybar/scripts/rofi-wifi.sh",
     "interval": 10
 
 },
@@ -60,9 +54,10 @@
   "on-scroll-down": "pamixer -d 5"
 },
 "hyprland/language": {
+	"on-click": "hyprctl switchxkblayout at-translated-set-2-keyboard next",
     "format": "{}",
-    "format-en": "EN",
-    "format-cs": "CZ"
+    "format-en": "🇬🇧",
+    "format-cs": "🇨🇿"
 }
 
 }

@@ -12,14 +12,15 @@ return {
 				show_close_icon = true,
 			},
 		})
-		vim.api.nvim_set_keymap("n", "<leader><leader>", ":BufferLineCycleNext<CR>", { noremap = true, silent = true })
-		for i = 1, 10, 1 do
+		vim.api.nvim_set_keymap("n", "<F23>", ":BufferLineCycleNext<CR>", { noremap = true, silent = true })
+		for i = 1, 9, 1 do
 			vim.api.nvim_set_keymap(
 				"n",
-				"<leader>" .. i,
+				"<F" .. i+12 .. ">",
 				":BufferLineGoToBuffer " .. i .. "<CR>",
 				{ noremap = true, silent = true }
 			)
 		end
+		vim.api.nvim_set_keymap("n", "<F22>", ":BufferLineGoToBuffer" .. 10 .. "<CR>", { noremap = true, silent = true })
 	end,
 }
