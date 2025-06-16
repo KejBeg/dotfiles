@@ -13,11 +13,8 @@ return {
 				ensure_installed = {
 					"lua_ls",
 					"clangd",
-					"ts_ls",
 					"marksman",
-					"intelephense",
 					"phpactor",
-					"html",
 					"lemminx",
 				},
 			})
@@ -36,15 +33,6 @@ return {
 				capabilities = capabilities,
 				cmd = { "clangd", "--compile-commands-dir=build/" },
 				-- root_dir = require("lspconfig").util.root_pattern("compile_commands.json", ".git"),
-			})
-			lspconfig.ts_ls.setup({
-				capabilities = capabilities,
-			})
-			lspconfig.intelephense.setup({
-				capabilities = capabilities,
-			})
-			lspconfig.html.setup({
-				capabilities = capabilities,
 			})
 
 			lspconfig.marksman.setup({
