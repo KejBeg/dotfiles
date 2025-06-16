@@ -1,0 +1,46 @@
+{
+  "position": "top",
+	"height": 30,
+  "modules-left": ["hyprland/workspaces"],
+  "modules-center": ["clock"],
+  "modules-right": ["hyprland/language","pulseaudio","tray"],
+ 
+	    "clock": {
+    "format": "{:%H:%M:%S}",
+				"tooltip-format": "",
+				"interval": 1
+    },
+"hyprland/workspaces": {
+  "format": "{icon}",
+  "on-click": "activate",
+  "format-icons": {
+    "1": "",   // graduation cap icon (Nerd Font)
+    "2": "",   // Chrome browser icon
+    "3": "",   // terminal / code icon
+    "4": "",   // gear (settings)
+    "5": "",   // gear (settings)
+		"9": "󰙯",   // Discord icon (alternative: )
+    "10": "󰚩",
+    "default": ""
+  }
+},
+"pulseaudio": {
+  "format": "{icon} {volume}%",
+  "format-muted": " Muted",
+  "format-icons": {
+    "default": ["", "", ""]
+  },
+  "scroll-step": 5,
+  "on-click": "pavucontrol",
+  "on-click-right": "pamixer -t",
+  "on-scroll-up": "pamixer -i 5",
+  "on-scroll-down": "pamixer -d 5"
+},
+"hyprland/language": {
+	"on-click": "hyprctl switchxkblayout at-translated-set-2-keyboard next",
+    "format": "{}",
+    "format-en": "🇬🇧",
+    "format-cs": "🇨🇿"
+}
+
+}

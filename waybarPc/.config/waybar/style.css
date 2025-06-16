@@ -1,0 +1,32 @@
+
+* {
+  min-height: 0;
+  min-width: 0;
+  font-family: "JetBrainsMono Nerd Font", monospace;
+  font-size: 16px;
+  font-weight: 800;
+	background:transparent;
+	color: white
+
+}
+
+label.module {
+    padding: 0 10px;
+		border-radius: 10px;
+		background: rgba(255, 255, 255, 0.1);
+		margin: 5px;
+}
+
+#workspaces {
+    padding: 0 10px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 5px;
+}
+
+#tray {
+		padding: 0 10px;
+		border-radius: 10px;
+		background: rgba(255, 255, 255, 0.1);
+		margin: 5px;
+}
