@@ -15,9 +15,11 @@ COMPLETION_WAITING_DOTS="true"
 
 plugins=(
 	git
+	zsh-autosuggestions
 	)
 
 source $ZSH/oh-my-zsh.sh
+[ -f ~/.secrets ] && source ~/.secrets
 
 # Binds
 bindkey "^H" backward-delete-word
@@ -25,12 +27,9 @@ bindkey "^H" backward-delete-word
 # User configuration
 
 export Term=linux	
-export LIBVIRT_DEFAULT_URI="qemu:///session"
 export EDITOR=nvim
 export LANG=en_US.UTF-8
 export LC_CTYPE=en_US.UTF-8
-export PHP_CS_FIXER_IGNORE_ENV=1
-export LS_COLORS="exfat=00;37:di=00;34:*.txt=00;37:*.jpg=00;37:*.mp4=00;37"
 
 export ANDROID_HOME=/home/kejbeg/Android/Sdk          
 # export ANDROID_SDK_ROOT=$HOME/Android/Sdk
@@ -42,6 +41,7 @@ export PATH=$PATH:$ANDROID_HOME/cmdline-tools/bin
 
 
 eval "$(starship init zsh)"
+eval "$(zoxide init --cmd cd zsh)"
 
 alias vim=nvim
 alias cat=bat

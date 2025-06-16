@@ -15,22 +15,6 @@ vim.opt.softtabstop = 2
 
 vim.opt.timeoutlen = 300
 
-vim.keymap.set("n", "<M-C-h>", "<CMD>vertical resize -10<CR>", { noremap = true, silent = true })
-vim.keymap.set("n", "<M-C-l>", "<CMD>vertical resize +10<CR>", { noremap = true, silent = true })
-vim.keymap.set("n", "<M-C-j>", "<CMD>resize -10<CR>", { noremap = true, silent = true })
-vim.keymap.set("n", "<M-C-k>", "<CMD>resize +10<CR>", { noremap = true, silent = true })
-
-vim.api.nvim_set_keymap("n", "<M-m>", "<CMD>vsplit<CR>", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "<M-n>", "<CMD>split<CR>", { noremap = true, silent = true })
-
-vim.keymap.set("n", "<M-w>", "<CMD>wq<CR>", { noremap = true, silent = true })
-
-
-vim.keymap.set("n", "<M-h>", "<C-w>h", { noremap = true, silent = true })
-vim.keymap.set("n", "<M-l>", "<C-w>l", { noremap = true, silent = true })
-vim.keymap.set("n", "<M-j>", "<C-w>j", { noremap = true, silent = true })
-vim.keymap.set("n", "<M-k>", "<C-w>k", { noremap = true, silent = true })
-
 vim.cmd([[
   command! Wa wa
   command! Qa qa
@@ -39,7 +23,3 @@ vim.cmd([[
   command! Wqa wqa
 ]])
 
-vim.keymap.set("n", "<leader>t", function()
-	local cwd = vim.fn.getcwd()
-	os.execute(string.format("kitty --working-directory '%s' > /dev/null 2>&1 &", cwd))
-end, { desc = "Open new Kitty with nvim in same dir" })
