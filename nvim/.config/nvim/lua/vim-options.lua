@@ -15,33 +15,21 @@ vim.opt.softtabstop = 2
 
 vim.opt.timeoutlen = 300
 
-vim.api.nvim_set_keymap("n", "<C-h>", "<C-w>h", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "<C-j>", "<C-w>j", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "<C-k>", "<C-w>k", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "<C-l>", "<C-w>l", { noremap = true, silent = true })
+vim.keymap.set("n", "<M-C-h>", "<CMD>vertical resize -10<CR>", { noremap = true, silent = true })
+vim.keymap.set("n", "<M-C-l>", "<CMD>vertical resize +10<CR>", { noremap = true, silent = true })
+vim.keymap.set("n", "<M-C-j>", "<CMD>resize -10<CR>", { noremap = true, silent = true })
+vim.keymap.set("n", "<M-C-k>", "<CMD>resize +10<CR>", { noremap = true, silent = true })
 
-vim.keymap.set("n", "<M-C-H>", "<CMD>vertical resize -10<CR>", { noremap = true, silent = true })
-vim.keymap.set("n", "<M-C-L>", "<CMD>vertical resize +10<CR>", { noremap = true, silent = true })
-vim.keymap.set("n", "<M-C-J>", "<CMD>resize -10<CR>", { noremap = true, silent = true })
-vim.keymap.set("n", "<M-C-K>", "<CMD>resize +10<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<M-m>", "<CMD>vsplit<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<M-n>", "<CMD>split<CR>", { noremap = true, silent = true })
 
-vim.api.nvim_set_keymap("n", "<leader>hs", ":split<CR>", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "<leader>vs", ":vsplit<CR>", { noremap = true, silent = true })
+vim.keymap.set("n", "<M-w>", "<CMD>wq<CR>", { noremap = true, silent = true })
 
-vim.keymap.set("n", "<leader>q", "<CMD>bdelete<CR>", { noremap = true, silent = true })
 
--- vim.keymap.set("n", "<F13>", ":echo 'Custom CTRL1'<CR>", { noremap = true, silent = true })
--- vim.keymap.set("n", "<F14>", ":echo 'Custom CTRL2'<CR>", { noremap = true, silent = true })
--- vim.keymap.set("n", "<F15>", ":echo 'Custom CTRL3'<CR>", { noremap = true, silent = true })
--- vim.keymap.set("n", "<F16>", ":echo 'Custom CTRL4'<CR>", { noremap = true, silent = true })
--- vim.keymap.set("n", "<F17>", ":echo 'Custom CTRL5'<CR>", { noremap = true, silent = true })
--- vim.keymap.set("n", "<F18>", ":echo 'Custom CTRL6'<CR>", { noremap = true, silent = true })
--- vim.keymap.set("n", "<F19>", ":echo 'Custom CTRL7'<CR>", { noremap = true, silent = true })
--- vim.keymap.set("n", "<F20>", ":echo 'Custom CTRL8'<CR>", { noremap = true, silent = true })
--- vim.keymap.set("n", "<F21>", ":echo 'Custom CTRL9'<CR>", { noremap = true, silent = true })
--- vim.keymap.set("n", "<F22>", ":echo 'Custom CTRL0'<CR>", { noremap = true, silent = true })
--- vim.keymap.set("n", "<F23>", ":echo 'Custom CTRL TAB'<CR>", { noremap = true, silent = true })
-
+vim.keymap.set("n", "<M-h>", "<C-w>h", { noremap = true, silent = true })
+vim.keymap.set("n", "<M-l>", "<C-w>l", { noremap = true, silent = true })
+vim.keymap.set("n", "<M-j>", "<C-w>j", { noremap = true, silent = true })
+vim.keymap.set("n", "<M-k>", "<C-w>k", { noremap = true, silent = true })
 
 vim.cmd([[
   command! Wa wa

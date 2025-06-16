@@ -15,8 +15,6 @@ COMPLETION_WAITING_DOTS="true"
 
 plugins=(
 	git
-	battery
-  zsh-autosuggestions
 	)
 
 source $ZSH/oh-my-zsh.sh
@@ -45,21 +43,12 @@ export PATH=$PATH:$ANDROID_HOME/cmdline-tools/bin
 
 eval "$(starship init zsh)"
 
-source <(fzf --zsh)
-
-export FZF_DEFAULT_COMMAND='fd --hidden --strip-cwd-prefix --exclude .git --exclude node_modules --exclude .cache --exclude .cargo --exclude .yarn --exclude .idea --exclude .vscode --exclude .DS_Store --type f'
-export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
-export FZF_ALT_C_COMMAND="fd --type=d --hidden --strip-cwd-prefix --exclude .git --exclude node_modules --exclude .cache --exclude .cargo --exclude .yarn --exclude .idea --exclude .vscode --exclude .DS_Store"
-
-export FZF_DEFAULT_OPTS="--height 50% --border --color=bg:#282828,fg:#ebdbb2,hl:#d3869b,info:#8ec07c,prompt:#fabd2f,spinner:#fe8019,marker:#83a598,fg+:#ebdbb2,bg+:#282828,hl+:#d3869b"
-
 alias vim=nvim
 alias cat=bat
 alias ls='eza --icons --group-directories-first'
 alias tree='eza --tree'
 alias windows="sudo grub-reboot 1 && sudo reboot"
 alias neofetch=fastfetch
-alias inv='selection=$(fzf -m --preview "bat {}"); if [ -n "$selection" ]; then nvim "$selection"; fi'
 alias zj=zellij
 
 fastfetch

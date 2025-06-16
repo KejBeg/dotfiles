@@ -20,12 +20,6 @@ return {
 
 				-- Php
 				null_ls.builtins.formatting.phpcbf,
-
-				-- Xml
-				null_ls.builtins.formatting.xmlformatter,
-
-				-- Cmake
-				null_ls.builtins.formatting.cmakelang,
 			},
 		})
 		vim.keymap.set("n", "<leader>f", vim.lsp.buf.format, {})

@@ -19,10 +19,6 @@ return {
 					"phpactor",
 					"html",
 					"lemminx",
-					"cmakelang",
-					"hydra-lsp",
-					"json-lsp",
-					"dot-language-server"
 				},
 			})
 		end,
