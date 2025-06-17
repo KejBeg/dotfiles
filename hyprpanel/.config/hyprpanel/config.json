@@ -1,0 +1,50 @@
+{
+  "bar.layouts": {
+    "0": {
+      "left": [
+        "dashboard",
+        "workspaces"
+      ],
+      "middle": [
+        "clock"
+      ],
+      "right": [
+        "network",
+        "bluetooth",
+        "battery",
+        "volume",
+        "systray",
+        "notifications",
+        "power"
+      ]
+    }
+  },
+  "theme.bar.floating": true,
+  "theme.bar.location": "top",
+  "bar.autoHide": "never",
+  "theme.bar.buttons.borderSize": "0.05em",
+  "theme.bar.border.location": "none",
+  "theme.bar.enableShadow": true,
+  "notifications.position": "top right",
+  "notifications.showActionsOnHover": false,
+  "menus.clock.time.military": true,
+  "menus.clock.weather.unit": "metric",
+  "menus.clock.weather.location": "Los Angeles",
+  "menus.clock.weather.enabled": true,
+  "menus.dashboard.powermenu.avatar.image": "/home/kejbeg/dotfiles/hyprBase/.config/hypr/images/pfp.png",
+  "menus.dashboard.powermenu.avatar.name": "kejbeg",
+  "menus.dashboard.powermenu.confirmation": true,
+  "menus.dashboard.stats.enabled": false,
+  "menus.dashboard.controls.enabled": true,
+  "menus.dashboard.shortcuts.enabled": false,
+  "menus.dashboard.directories.enabled": false,
+  "theme.bar.buttons.modules.microphone.enableBorder": true,
+  "theme.bar.menus.monochrome": false,
+  "theme.matugen": true,
+  "wallpaper.image": "/home/kejbeg/dotfiles/hyprBase/.config/hypr/images/bg.png",
+  "wallpaper.pywal": true,
+  "theme.matugen_settings.scheme_type": "content",
+  "theme.matugen_settings.contrast": 0.6,
+  "wallpaper.enable": true,
+  "theme.bar.transparent": true
+}

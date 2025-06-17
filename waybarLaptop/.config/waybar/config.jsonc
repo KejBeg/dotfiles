@@ -14,12 +14,9 @@
   "format": "{icon}",
   "on-click": "activate",
   "format-icons": {
-    "1": "",   // graduation cap icon (Nerd Font)
-    "2": "",   // Chrome browser icon
-    "3": "",   // terminal / code icon
-    "4": "",   // gear (settings)
-    "5": "",   // gear (settings)
-		"9": "󰙯",   // Discord icon (alternative: )
+    "7": "",
+    "8": "",
+		"9": "󰙯",
     "10": "󰚩",
     "default": ""
   }

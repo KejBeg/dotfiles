@@ -43,7 +43,10 @@ export PATH=$PATH:$ANDROID_HOME/cmdline-tools/bin
 eval "$(starship init zsh)"
 eval "$(zoxide init --cmd cd zsh)"
 
+alias c=cd
 alias vim=nvim
+alias vi=nvim
+alias v=nvim
 alias cat=bat
 alias ls='eza --icons --group-directories-first'
 alias tree='eza --tree'
