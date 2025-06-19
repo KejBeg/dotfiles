@@ -96,5 +96,14 @@
   "theme.bar.buttons.text": "#eeeeee",
   "theme.bar.buttons.icon": "#eeeeee",
   "theme.bar.buttons.icon_background": "#1d1d20",
-  "scalingPriority": "hyprland"
+  "scalingPriority": "hyprland",
+  "theme.bar.menus.buttons.default": "#363636",
+  "theme.bar.menus.buttons.text": "#eeeeee",
+  "theme.bar.menus.buttons.disabled": "#2a2c2e",
+  "theme.bar.menus.buttons.active": "#3584e4",
+  "theme.bar.buttons.workspaces.hover": "#eeeeee",
+  "theme.bar.buttons.workspaces.available": "#eeeeee",
+  "theme.bar.buttons.workspaces.occupied": "#eeeeee",
+  "theme.bar.buttons.workspaces.active": "#eeeeee",
+  "theme.bar.buttons.workspaces.numbered_active_underline_color": "#eeeeee"
 }
