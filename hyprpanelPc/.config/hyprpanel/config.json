@@ -10,9 +10,21 @@
       ],
       "right": [
         "custom/language",
-        "network",
-        "bluetooth",
-        "battery",
+        "volume",
+        "systray",
+        "notifications"
+      ]
+    },
+    "1": {
+      "left": [
+        "dashboard",
+        "workspaces"
+      ],
+      "middle": [
+        "clock"
+      ],
+      "right": [
+        "custom/language",
         "volume",
         "systray",
         "notifications"
@@ -50,9 +62,6 @@
   "menus.dashboard.shortcuts.left.shortcut1.command": "zen-browser",
   "menus.dashboard.shortcuts.left.shortcut1.tooltip": "Zen Browser",
   "menus.clock.weather.key": "",
-  "bar.customModules.storage.paths": [
-    "/"
-  ],
   "theme.bar.menus.menu.power.scaling": 100,
   "theme.bar.menus.shadow": "1px 1px 1px 1px #161616",
   "theme.bar.menus.enableShadow": false,
@@ -67,7 +76,6 @@
   "bar.workspaces.showWsIcons": true,
   "bar.workspaces.showApplicationIcons": true,
   "theme.bar.buttons.workspaces.smartHighlight": true,
-  "theme.bar.buttons.bluetooth.enableBorder": false,
   "theme.bar.buttons.systray.enableBorder": false,
   "bar.clock.format": "%a %b %d  %H:%M:%S",
   "theme.notification.enableShadow": false,
@@ -98,12 +106,14 @@
   "theme.bar.buttons.icon_background": "#1d1d20",
   "scalingPriority": "hyprland",
   "theme.bar.menus.buttons.default": "#363636",
-  "theme.bar.menus.buttons.text": "#eeeeee",
   "theme.bar.menus.buttons.disabled": "#2a2c2e",
   "theme.bar.menus.buttons.active": "#3584e4",
   "theme.bar.buttons.workspaces.hover": "#eeeeee",
   "theme.bar.buttons.workspaces.available": "#eeeeee",
   "theme.bar.buttons.workspaces.occupied": "#eeeeee",
   "theme.bar.buttons.workspaces.active": "#eeeeee",
-  "theme.bar.buttons.workspaces.numbered_active_underline_color": "#eeeeee"
+  "theme.bar.buttons.workspaces.numbered_active_underline_color": "#eeeeee",
+  "bar.customModules.storage.paths": [
+    "/"
+  ]
 }
