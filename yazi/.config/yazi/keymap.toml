@@ -4,7 +4,7 @@
 
 
 
-[mgr] 
+[mgr]
 
 
 keymap = [
@@ -21,10 +21,7 @@ keymap = [
 	{ on = "<F18>", run = "tab_switch 5", desc = "Switch to tab" },
 	{ on = "<F19>", run = "tab_switch 6", desc = "Switch to tab" },
 	{ on = "<F20>", run = "tab_switch 7", desc = "Switch to tab" },
-	{ on = "<F21>", run = "tab_switch 8", desc = "Switch to tab" },
-	{ on = "<F22>", run = "tab_switch 9", desc = "Switch to tab" },
 
-{ on = "<F23>", run = "tab_switch +1 --relative", desc = "Switch to previous tab" },
 { on = "<C-h>", run = "tab_switch -1 --relative", desc = "Switch to previous tab" },
 
 { on = "<C-l>", run = "tab_switch +1 --relative", desc = "Switch to previous tab" },
