@@ -1,0 +1,57 @@
+* {
+  background-image: none;
+  box-shadow: none;
+}
+
+window {
+  background-color: rgba(29, 29, 32, 0.9);
+}
+
+button {
+  color: #eeeeee;
+  background-color: #343437;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;
+  margin: 10px;
+  border-radius: 10px;
+  border: 2px solid #28282c;
+}
+
+button:focus,
+button:hover {
+  background-color: #525255;
+}
+button:active {
+  background-color: #434346;
+}
+
+#lock {
+  background-image: image(
+		url('images/lock.svg')
+  );
+}
+
+#logout {
+  background-image: image(
+		url('images/logout.svg')
+  );
+}
+
+#suspend {
+  background-image: image(
+		url('images/suspend.svg')
+  );
+}
+
+#shutdown {
+  background-image: image(
+		url('images/shutdown.svg')
+  );
+}
+
+#reboot {
+  background-image: image(
+		url('images/reboot.svg')
+  );
+}
