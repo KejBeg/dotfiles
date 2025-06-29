@@ -3,7 +3,6 @@
     "label": "{}",
     "tooltip": "Current layout: {}",
     "execute": "~/.config/hyprpanel/scripts/language.sh",
-    "interval": 1000,
-    "hideOnEmpty": false
+    "interval": 1000
 	}
 }

@@ -3,9 +3,9 @@
 language=$(hyprctl devices -j | jq -r '.keyboards[] | select(.main == true) | .active_keymap')
 
 if [[ "$language" == "English (US)" ]]; then
-    echo "🇬🇧"
+    printf "%s" "🇬🇧"
 elif [[ "$language" == "Czech" ]]; then
-    echo "🇨🇿"
+    printf "%s" "🇨🇿"
 else
-    echo "$language"
+    printf "%s" "$language"
 fi
