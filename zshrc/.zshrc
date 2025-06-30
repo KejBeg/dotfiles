@@ -26,19 +26,10 @@ bindkey "^H" backward-delete-word
 
 # User configuration
 
-export Term=linux	
+export TERM=xterm-256color
 export EDITOR=nvim
 export LANG=en_US.UTF-8
 export LC_CTYPE=en_US.UTF-8
-
-export ANDROID_HOME=/home/kejbeg/Android/Sdk          
-# export ANDROID_SDK_ROOT=$HOME/Android/Sdk
-export PATH=$PATH:$ANDROID_HOME/emulator
-export PATH=$PATH:$ANDROID_HOME/tools
-export PATH=$PATH:$ANDROID_HOME/tools/bin
-export PATH=$PATH:$ANDROID_HOME/platform-tools
-export PATH=$PATH:$ANDROID_HOME/cmdline-tools/bin
-
 
 eval "$(starship init zsh)"
 eval "$(zoxide init --cmd cd zsh)"
