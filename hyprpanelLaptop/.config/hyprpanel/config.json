@@ -120,5 +120,6 @@
   "theme.bar.menus.popover.background": "#000000",
   "theme.bar.buttons.notifications.enableBorder": false,
   "bar.notifications.show_total": true,
-  "bar.notifications.hideCountWhenZero": true
+  "bar.notifications.hideCountWhenZero": true,
+  "menus.dashboard.powermenu.avatar.image": "/home/kejbeg/.config/hypr/images/pfp.png"
 }

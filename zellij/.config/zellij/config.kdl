@@ -8,7 +8,7 @@ keybinds clear-defaults=true {
 	}
 
 	pane {
-		bind "Ctrl p" { SwitchToMode "normal"; }
+		bind "Ctrl p" { SwitchToMode "pane"; }
 		bind "Ctrl i" { SwitchToMode "tab"; }
 		bind "Ctrl o" { SwitchToMode "session";}
 		bind "Esc" { SwitchToMode "normal"; }
@@ -25,7 +25,7 @@ keybinds clear-defaults=true {
 	}
 
 	tab {
-		bind "Ctrl p" { SwitchToMode "normal"; }
+		bind "Ctrl p" { SwitchToMode "pane"; }
 		bind "Ctrl i" { SwitchToMode "tab"; }
 		bind "Ctrl o" { SwitchToMode "session";}
 		bind "Esc" { SwitchToMode "normal"; }
@@ -48,7 +48,7 @@ keybinds clear-defaults=true {
 	}
 
 	session {
-		bind "Ctrl p" { SwitchToMode "normal"; }
+		bind "Ctrl p" { SwitchToMode "pane"; }
 		bind "Ctrl i" { SwitchToMode "tab"; }
 		bind "Ctrl o" { SwitchToMode "session";}
 		bind "Esc" { SwitchToMode "normal"; }
@@ -82,7 +82,7 @@ plugins {
     strider location="zellij:strider"
     tab-bar location="zellij:tab-bar"
     welcome-screen location="zellij:session-manager" {
-        welcome_screen true
+        welcome_screen false
     }
 }
 
@@ -92,11 +92,12 @@ ui {
 		hide_session_name false
 	}
 }
-		
+
 // Plugins to load in the background when a new session starts
 // eg. "file:/path/to/my-plugin.wasm"
 // eg. "https://example.com/my-plugin.wasm"
 load_plugins {
+
 }
  
 // Use a simplified UI without special fonts (arrow glyphs)
@@ -109,7 +110,7 @@ simplified_ui false
 // Choose the theme that is specified in the themes section.
 // Default: default
 // 
-theme "default"
+theme "ansi"
  
 // Choose the base input mode of zellij.
 // Default: normal
@@ -154,10 +155,10 @@ mouse_mode true
 //   - true (default, enabled)
 //   - false
 // 
-pane_frames true
+pane_frames false
  
 // When attaching to an existing session with other users,
-// should the session be mirrored (true)
+// should the session be mirrored ()
 // or should each user have their own cursor (false)
 // (Requires restart)
 // Default: false
@@ -171,7 +172,7 @@ pane_frames true
 //   - detach (Default)
 //   - quit
 // 
-// on_force_close "quit"
+on_force_close "quit"
  
 // Configure the scroll back buffer size
 // This is the number of lines zellij stores for each pane in the scroll back
@@ -197,7 +198,7 @@ copy_command "wl-copy"                    // wayland
 //   - system (default)
 //   - primary
 // 
-copy_clipboard "system"
+// copy_clipboard "primary"
  
 // Enable automatic copying (and clearing) of selection when releasing mouse
 // Default: true
