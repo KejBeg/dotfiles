@@ -58,7 +58,6 @@
   "theme.bar.menus.enableShadow": false,
   "menus.transition": "crossfade",
   "tear": true,
-  "theme.font.size": "1.1rem",
   "theme.bar.buttons.enableBorders": false,
   "theme.bar.buttons.workspaces.enableBorder": false,
   "bar.workspaces.show_icons": false,
@@ -121,5 +120,9 @@
   "theme.bar.buttons.notifications.enableBorder": false,
   "bar.notifications.show_total": true,
   "bar.notifications.hideCountWhenZero": true,
-  "menus.dashboard.powermenu.avatar.image": "/home/kejbeg/.config/hypr/images/pfp.png"
+  "menus.dashboard.powermenu.avatar.image": "/home/kejbeg/.config/hypr/images/pfp.png",
+  "theme.font.size": "1.1rem",
+  "theme.font.name": "JetBrainsMono Nerd Font",
+  "theme.font.label": "JetBrainsMono Nerd Font",
+  "theme.font.weight": 700
 }
