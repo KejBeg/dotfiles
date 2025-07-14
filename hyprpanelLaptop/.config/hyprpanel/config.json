@@ -9,7 +9,7 @@
         "clock"
       ],
       "right": [
-        "custom/language",
+       "custom/language",
         "network",
         "bluetooth",
         "battery",
@@ -17,8 +17,8 @@
         "systray",
         "notifications"
       ]
-    }
-  },
+    },
+      },
   "theme.bar.floating": true,
   "theme.bar.location": "top",
   "bar.autoHide": "never",
@@ -31,7 +31,7 @@
   "menus.clock.weather.unit": "metric",
   "menus.clock.weather.location": "Los Angeles",
   "menus.clock.weather.enabled": false,
-  "menus.dashboard.powermenu.avatar.image": "/.confi",
+  "menus.dashboard.powermenu.avatar.image": "/home/kejbeg/.config/hypr/images/pfp.png",
   "menus.dashboard.powermenu.avatar.name": "kejbeg",
   "menus.dashboard.powermenu.confirmation": true,
   "menus.dashboard.stats.enabled": false,
@@ -120,7 +120,6 @@
   "theme.bar.buttons.notifications.enableBorder": false,
   "bar.notifications.show_total": true,
   "bar.notifications.hideCountWhenZero": true,
-  "menus.dashboard.powermenu.avatar.image": "/home/kejbeg/.config/hypr/images/pfp.png",
   "theme.font.size": "1.1rem",
   "theme.font.name": "JetBrainsMono Nerd Font",
   "theme.font.label": "JetBrainsMono Nerd Font",
