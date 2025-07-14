@@ -1,0 +1,118 @@
+[Default Applications]
+# Browser related
+x-scheme-handler/http=zen.desktop
+x-scheme-handler/https=zen.desktop
+x-scheme-handler/chrome=zen.desktop
+text/html=zen.desktop
+application/x-extension-htm=zen.desktop
+application/x-extension-html=zen.desktop
+application/x-extension-shtml=zen.desktop
+application/xhtml+xml=zen.desktop
+application/x-extension-xhtml=zen.desktop
+application/x-extension-xht=zen.desktop
+
+# Documents
+text/plain=org.gnome.TextEditor.desktop
+application/pdf=org.gnome.Evince.desktop
+
+# Images
+image/jpeg=org.gnome.Loupe.desktop
+image/png=org.gnome.Loupe.desktop
+image/gif=org.gnome.Loupe.desktop
+image/bmp=org.gnome.Loupe.desktop
+image/tiff=org.gnome.Loupe.desktop
+image/webp=org.gnome.Loupe.desktop
+
+# Videos
+video/mp4=org.gnome.Totem.desktop
+video/x-matroska=org.gnome.Totem.desktop
+video/webm=org.gnome.Totem.desktop
+video/avi=org.gnome.Totem.desktop
+video/quicktime=org.gnome.Totem.desktop
+
+# Archives
+application/zip=org.gnome.FileRoller.desktop
+application/x-rar-compressed=org.gnome.FileRoller.desktop
+application/x-tar=org.gnome.FileRoller.desktop
+application/gzip=org.gnome.FileRoller.desktop
+application/x-7z-compressed=org.gnome.FileRoller.desktop
+application/x-bzip=org.gnome.FileRoller.desktop
+application/x-xz=org.gnome.FileRoller.desktop
+application/x-compressed-tar=org.gnome.FileRoller.desktop # .tar.gz, .tgz
+application/x-bzip-compressed-tar=org.gnome.FileRoller.desktop # .tar.bz2, .tbz
+application/x-xz-compressed-tar=org.gnome.FileRoller.desktop # .tar.xz, .txz
+application/vnd.debian.binary-package=org.gnome.FileRoller.desktop # .deb files
+application/x-rpm=org.gnome.FileRoller.desktop # .rpm files
+application/vnd.flatpak=org.gnome.FileRoller.desktop # .flatpak files
+application/vnd.snap=org.gnome.FileRoller.desktop # .snap files
+
+# Fonts
+application/font-sfnt=org.gnome.font-viewer.desktop; # For .ttf, .otf
+application/x-font-ttf=org.gnome.font-viewer.desktop; # Specific for .ttf
+application/x-font-otf=org.gnome.font-viewer.desktop; # Specific for .otf
+application/font-woff=org.gnome.font-viewer.desktop;
+application/font-woff2=org.gnome.font-viewer.desktop;
+application/vnd.ms-fontobject=org.gnome.font-viewer.desktop; # For .eot
+
+# Others
+application/x-appimage=it.mijorus.gearlever.desktop
+
+[Added Associations]
+# Browser related
+x-scheme-handler/http=zen.desktop
+x-scheme-handler/https=zen.desktop
+x-scheme-handler/chrome=zen.desktop
+text/html=zen.desktop
+application/x-extension-htm=zen.desktop
+application/x-extension-html=zen.desktop
+application/x-extension-shtml=zen.desktop
+application/xhtml+xml=zen.desktop
+application/x-extension-xhtml=zen.desktop
+application/x-extension-xht=zen.desktop
+
+# Documents
+text/plain=org.gnome.TextEditor.desktop
+application/pdf=org.gnome.Evince.desktop
+
+# Images
+image/jpeg=org.gnome.Loupe.desktop;io.gitlab.adhami3310.Converter.desktop
+image/png=org.gnome.Loupe.desktop;io.gitlab.adhami3310.Converter.desktop
+image/gif=org.gnome.Loupe.desktop;io.gitlab.adhami3310.Converter.desktop
+image/bmp=org.gnome.Loupe.desktop;io.gitlab.adhami3310.Converter.desktop
+image/tiff=org.gnome.Loupe.desktop;io.gitlab.adhami3310.Converter.desktop
+image/webp=org.gnome.Loupe.desktop;io.gitlab.adhami3310.Converter.desktop
+
+
+# Videos
+video/mp4=org.gnome.Totem.desktop
+video/x-matroska=org.gnome.Totem.desktop
+video/webm=org.gnome.Totem.desktop
+video/avi=org.gnome.Totem.desktop
+video/quicktime=org.gnome.Totem.desktop
+
+# Archives
+application/zip=org.gnome.FileRoller.desktop
+application/x-rar-compressed=org.gnome.FileRoller.desktop
+application/x-tar=org.gnome.FileRoller.desktop
+application/gzip=org.gnome.FileRoller.desktop
+application/x-7z-compressed=org.gnome.FileRoller.desktop
+application/x-bzip=org.gnome.FileRoller.desktop
+application/x-xz=org.gnome.FileRoller.desktop
+application/x-compressed-tar=org.gnome.FileRoller.desktop # .tar.gz, .tgz
+application/x-bzip-compressed-tar=org.gnome.FileRoller.desktop # .tar.bz2, .tbz
+application/x-xz-compressed-tar=org.gnome.FileRoller.desktop # .tar.xz, .txz
+application/vnd.debian.binary-package=org.gnome.FileRoller.desktop # .deb files
+application/x-rpm=org.gnome.FileRoller.desktop # .rpm files
+application/vnd.flatpak=org.gnome.FileRoller.desktop # .flatpak files
+application/vnd.snap=org.gnome.FileRoller.desktop # .snap files
+
+# Fonts
+application/font-sfnt=org.gnome.font-viewer.desktop; # For .ttf, .otf
+application/x-font-ttf=org.gnome.font-viewer.desktop; # Specific for .ttf
+application/x-font-otf=org.gnome.font-viewer.desktop; # Specific for .otf
+application/font-woff=org.gnome.font-viewer.desktop;
+application/font-woff2=org.gnome.font-viewer.desktop;
+application/vnd.ms-fontobject=org.gnome.font-viewer.desktop; # For .eot
+
+# Others
+application/x-appimage=it.mijorus.gearlever.desktop

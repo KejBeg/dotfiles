@@ -4,7 +4,7 @@ return {
 	config = function()
 		require("bufferline").setup({
 			options = {
-				separator_style = "slant",
+				separator_style = "thin",
 				always_show_bufferline = true,
 				diagnostics = "nvim_lsp",
 				offsets = { { filetype = "neo-tree", text = "Explorer", padding = 0 } },

@@ -44,8 +44,6 @@ alias tree='eza --tree'
 alias windows="sudo grub-reboot 1 && sudo reboot"
 alias neofetch=fastfetch
 alias zj=zellij
-alias sshfs-container-runner="sshfs triver:/home/container-runner /mnt/triver/container-runner"
-
 
 if command -v zellij &>/dev/null && [ -z "$ZELLIJ" ]; then
     exec zellij

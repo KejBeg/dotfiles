@@ -16,7 +16,8 @@ return {
 					"marksman",
 					"phpactor",
 					"lemminx",
-					"taplo"
+					"taplo",
+
 				},
 			})
 		end,
@@ -54,8 +55,6 @@ return {
 			lspconfig.taplo.setup({
 				capabilities = capabilities,
 			})
-
-
 		end,
 	},
 }

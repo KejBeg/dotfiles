@@ -1,6 +1,6 @@
 return  {
-        "Mofiqul/adwaita.nvim",
+	"Mofiqul/vscode.nvim",
 	config = function()
-						vim.cmd.colorscheme("adwaita")
-				end
-    }
+		vim.cmd.colorscheme("vscode")
+	end
+}
