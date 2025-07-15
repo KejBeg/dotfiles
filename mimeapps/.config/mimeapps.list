@@ -56,6 +56,7 @@ application/vnd.ms-fontobject=org.gnome.font-viewer.desktop; # For .eot
 
 # Others
 application/x-appimage=it.mijorus.gearlever.desktop
+x-scheme-handler/nc=com.nextcloud.desktopclient.nextcloud.desktop
 
 [Added Associations]
 # Browser related
