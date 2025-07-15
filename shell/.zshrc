@@ -44,6 +44,8 @@ alias tree='eza --tree'
 alias windows="sudo grub-reboot 1 && sudo reboot"
 alias neofetch=fastfetch
 alias zj=zellij
+# alias sudo='sudo -E'
+alias sudo='sudo '
 
 if command -v zellij &>/dev/null && [ -z "$ZELLIJ" ]; then
     exec zellij
