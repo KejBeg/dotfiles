@@ -9,7 +9,7 @@
         "clock"
       ],
       "right": [
-       "custom/language",
+        "custom/language",
         "network",
         "bluetooth",
         "battery",
@@ -17,8 +17,8 @@
         "systray",
         "notifications"
       ]
-    },
-      },
+    }
+  },
   "theme.bar.floating": true,
   "theme.bar.location": "top",
   "bar.autoHide": "never",
