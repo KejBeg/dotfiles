@@ -13,6 +13,8 @@ plugins=(
 	zsh-autosuggestions
 )
 
+source $ZSH/oh-my-zsh.sh
+
 # Binds
 bindkey "^H" backward-delete-word
 
